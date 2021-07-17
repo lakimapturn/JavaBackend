@@ -10,7 +10,7 @@ public class UserInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private long id; // unique
     private String username;
     private String password;
     private String fullname;

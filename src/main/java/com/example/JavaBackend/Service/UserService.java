@@ -1,5 +1,7 @@
-package com.example.JavaBackend;
+package com.example.JavaBackend.Service;
 
+import com.example.JavaBackend.UserInfo;
+import com.example.JavaBackend.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +26,7 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public void updateUserInfo(UserInfo user) {
+    public void updateUserInfo(UserInfo user, long id) {
         userRepository.save(user);
     }
 
